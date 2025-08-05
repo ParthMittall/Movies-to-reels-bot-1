@@ -1,12 +1,7 @@
 services:
   - type: web
-    name: movies-to-reels-bot
+    name: Movies-to-reels-bot-1
     env: python
-    plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python bot.py"
-    envVars:
-      - key: BOT_TOKEN
-        value: 8314882257:AAF2BU-ETi_z-I2NKTT-atIvC1VjqDDN0jY
-      - key: TELEGRAM_ID
-        value: 2106643498
+    startCommand: "python main.py"
+    plan: free
